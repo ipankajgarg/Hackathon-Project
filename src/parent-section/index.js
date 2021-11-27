@@ -56,6 +56,9 @@ function ParentSection () {
             <XpTable dataSource={data.data} />
             <div><Progress type="circle" percent={(data.attendedClasses/data.totalClasses)*100} width="180px" />
                 <p>Class Completion</p>
+                <div><Progress percent={50} status="active" />
+                <p>Assessment Completion</p>
+                </div>
             </div>
         </div>
             <div className="report-card">
@@ -63,7 +66,7 @@ function ParentSection () {
                 <Table pagination={false} columns={reportCardColumn} dataSource={data.reportData} />
                 </div>
         </>}
-        
+        <a href='/w1.pdf' download>Click to download</a>
     </>
 }
 
