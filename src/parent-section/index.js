@@ -2,8 +2,9 @@ import React,{useState} from 'react';
 import { Input,Progress,Table } from 'antd';
 import './parent-section.css';
 import XpTable from '../xp-table'
-import {xpTableData} from '../data'
+import {xpTableData, classes, studentClassData} from '../data'
 import Header from '../header'
+import Menus from '../schoolOwner/dropdown';
 
 const { Search } = Input;
 
@@ -53,8 +54,20 @@ const reportCardColumn = [
 function ParentSection () {
     const [inputText, setInputText] = useState('')
     const [data,setData] = useState(null)
-    return <>
+    const [selectedClass, setSelectedClass] = useState(null)
+    const [filteredClassData, setFilterData] = useState([])
+    const handleStudentFilter = (a) =>{
+        setSelectedClass(a)
+        const filterData = a ? studentClassData[a]: []
+        console.log(filterData)
+        setFilterData(filterData)
+    }
+    console.log(selectedClass)
+    return (
+    <>
     <Header/>
+    <Menus  dropdownData ={classes} title='select class' setSelectedOption={a=> handleStudentFilter(a)}/>
+    <Menus  dropdownData ={filteredClassData} title='select student'  setSelectedOption={a=> setData(xpTableData[a])}/>
         <div className="parent-container">
     <div className="input-container">
             <Search value={inputText} onChange={(e) => setInputText(e.target.value)} placeholder="Student name" enterButton="Search" size="large" onSearch={() => {
@@ -79,7 +92,7 @@ function ParentSection () {
             </div>
         </>}
         <a href='/w1.pdf' download>Click to download</a>
-    </>
+    </>)
 }
 
 export default ParentSection;

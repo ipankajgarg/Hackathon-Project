@@ -327,3 +327,12 @@ export const xpTableData = {
         ReportCardName: 'Student Report Card for Term 1'
     }
 }
+
+export const classes = [
+    '1', '2', '3', '4'
+]
+export const studentClassData = 
+{
+    1: ['default', 'pankaj'],
+    2: ['anant']
+}
