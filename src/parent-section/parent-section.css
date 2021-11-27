@@ -26,3 +26,14 @@
 .ant-table{
     border: 1px solid lightgrey;
 }
+.card-container{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+.ant-card-meta-detail .ant-card-meta-title{
+    white-space: normal
+}
+.ant-card{
+    cursor: pointer;
+}

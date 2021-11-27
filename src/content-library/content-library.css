@@ -1,0 +1,34 @@
+
+.content-library-container{
+    padding:30px;
+}
+.heading h1,h2,h3{
+    display: inline-block;
+}
+.heading h2{
+    margin-left: 10px;
+}
+.desc{
+    color:grey;
+}
+.instructions{
+    display: inline-block;
+    padding: 20px;
+    border: 1px solid lightgrey;
+}
+
+.instructions h3{
+    text-decoration: underline;
+}
+.content-library-container .ant-select-single:not(.ant-select-customize-input) .ant-select-selector{
+    height: 46px;
+}
+.content-library-container .ant-select-single .ant-select-selector .ant-select-selection-item, .ant-select-single .ant-select-selector .ant-select-selection-placeholder{
+    line-height: 46px;
+}
+.select-AR{
+    text-align: center;
+}
+.select-AR h2{
+    display: block;
+}

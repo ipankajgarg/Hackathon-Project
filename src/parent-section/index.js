@@ -1,11 +1,12 @@
 import React,{useState} from 'react';
-import { Input,Progress,Table } from 'antd';
+import { Input,Progress,Table, Card, Avatar } from 'antd';
 import './parent-section.css';
 import XpTable from '../xp-table'
 import {xpTableData} from '../data'
 import Header from '../header'
 
 const { Search } = Input;
+const { Meta } = Card;
 
 const reportCardColumn = [
     {
@@ -64,9 +65,32 @@ function ParentSection () {
             <div className="report-card">
             <h1>Student report Card</h1>
                 <Table pagination={false} columns={reportCardColumn} dataSource={data.reportData} />
-                </div>
+            </div>
+            <div className="card-container">
+        <Card
+    style={{ width: 300 }}
+    cover={
+      <img
+        alt="example"
+        src="https://gw.alipayobjects.com/zos/rmsportal/JiqGstEfoWAOHiTxclqi.png"
+      />
+    }
+    // actions={[
+    //   <SettingOutlined key="setting" />,
+    //   <EditOutlined key="edit" />,
+    //   <EllipsisOutlined key="ellipsis" />,
+    // ]}
+  >
+    <Meta
+      avatar={<Avatar src="https://joeschmoe.io/api/v1/random" />}
+      title="Click here to view student content library"
+      description="- Powered by AR"
+    />
+  </Card>,
+        </div>
         </>}
-        <a href='/w1.pdf' download>Click to download</a>
+        {/* <a href='/w1.pdf' download>Click to download</a> */}
+        
     </>
 }
 
