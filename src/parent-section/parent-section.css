@@ -1,0 +1,28 @@
+.parent-container{
+    display: flex;
+    justify-content: center;
+    
+   
+}
+.parent-container .input-container{
+  width: 30%;     
+  margin-top: 50px; 
+}
+.table-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top:50px;
+}
+.table-container p{
+    text-align: center;
+    margin-top:10px;
+    font-weight: 500;
+    font-size: 20px;
+}
+.report-card{
+    margin:20px 50px;
+}
+.ant-table{
+    border: 1px solid lightgrey;
+}
