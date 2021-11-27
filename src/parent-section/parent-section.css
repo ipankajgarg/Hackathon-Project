@@ -22,7 +22,7 @@
 }
 .report-card{
     margin:20px 50px;
-    padding-bottom: 80px;
+    /* padding-bottom: 80px; */
 }
 .ant-table{
     border: 1px solid lightgrey;
