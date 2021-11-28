@@ -52,7 +52,7 @@ const reportCardColumn = [
     
 ]
 
-function ParentSection () {
+function ParentSection ({setVissibility}) {
     const [inputText, setInputText] = useState('')
     const [data,setData] = useState(null)
     const [selectedClass, setSelectedClass] = useState(null)
@@ -92,7 +92,8 @@ function ParentSection () {
           <Table pagination={false} columns={data.reportCardColumn} dataSource={data.reportData} />
             </div>
             <div className="card-container">
-        <Card
+                    <Card
+                        onClick={()=>setVissibility(true)}
     style={{ width: 300 }}
     cover={
       <img
