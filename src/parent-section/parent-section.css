@@ -38,3 +38,24 @@
 .ant-card{
     cursor: pointer;
 }
+
+.login-box{
+    background: url(./login_box.jpg) no-repeat center center;
+    width: 743px;
+    height: 446px;
+    margin: 0 auto;
+    box-shadow: 0px 0px 13px #8a8a8a;
+    padding: 47px 50px 60px 50px;
+    /* margin-top: 180px; */
+}
+
+.paddingTop {
+    padding-top: 180px;
+}
+
+.login-title {
+    /* text-align: center; */
+  font-weight: bold;
+  font-size: 18px;
+  margin-top: 33px;
+}
