@@ -60,10 +60,10 @@ function OwnerSection () {
     const handleStudentFilter = (a) =>{
         setSelectedClass(a)
         const filterData = a ? studentClassData[a]: []
-        console.log(filterData)
+        // console.log(filterData)
         setFilterData(filterData)
     }
-    console.log(selectedClass)
+    // console.log(selectedClass)
     return (
     <>
     <Header/>

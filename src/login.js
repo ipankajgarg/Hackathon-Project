@@ -14,15 +14,15 @@ function Login({setVissibility}) {
   
   // handle button click of login form
   const handleLogin = (e) => {
-    console.log(e, username,password)
-    if(username.value == '7660864501'){
+    // console.log(e, username,password)
+    if(username.value == '8779001234' || username.value == '8779001235'){
         setParent(true)
         setLogin(false)
-    }else if(username.value == '987654321') {
+    }else if(username.value == '8779001237' || username.value == '8779001238') {
         setSchool(true)
         setLogin(false)
     }
-    console.log(login, parent, school)
+    // console.log(login, parent, school)
   }
  
   return (
